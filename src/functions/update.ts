@@ -7,7 +7,7 @@ export async function handler (event: APIGatewayProxyEventV2, context: Context, 
         await update(process.env.table as string, event.pathParameters.id, bookItem);
         const response = {
             statusCode: 200,
-        };
+        }
         callback(null, response);
     }
     callback(null, {

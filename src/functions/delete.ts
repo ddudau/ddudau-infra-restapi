@@ -6,7 +6,7 @@ export async function handler(event: APIGatewayProxyEventV2, context: Context, c
         await deleteItem(process.env.table as string, event.pathParameters.id);
         const response = {
             statusCode: 200,
-        };
+        }
         callback(null, response);
     }
 }

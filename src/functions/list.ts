@@ -6,6 +6,6 @@ export async function handler (event: APIGatewayProxyEventV2, context: Context, 
     const response = {
         statusCode: 200,
         body: JSON.stringify(books)
-    };
+    }
     callback(null, response);
 }
